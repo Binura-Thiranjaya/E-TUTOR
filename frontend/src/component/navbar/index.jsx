@@ -22,7 +22,7 @@ export default function App() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
-    <MDBNavbar expand="lg" light bgColor="light">
+    <MDBNavbar expand="lg" className="fixed-top" light bgColor="light">
       <MDBContainer fluid>
         <MDBNavbarBrand href="#">
           <MDBBtn rounded outline color="success">
@@ -47,12 +47,12 @@ export default function App() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#">Link</MDBNavbarLink>
+              <MDBNavbarLink href="#">All Tutor</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag="a" className="nav-link">
-                  Dropdown
+                  Subjects
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem>
@@ -68,14 +68,7 @@ export default function App() {
               </MDBDropdown>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink
-                disabled
-                href="#"
-                tabIndex={-1}
-                aria-disabled="true"
-              >
-                Disabled
-              </MDBNavbarLink>
+              <MDBNavbarLink href="#">Careers</MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
           <MDBInputGroup tag="form" className="d-flex w-auto mb-1">
