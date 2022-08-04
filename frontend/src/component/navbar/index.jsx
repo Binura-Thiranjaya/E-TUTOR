@@ -17,14 +17,13 @@ import {
   MDBCollapse,
   MDBInputGroup,
 } from "mdb-react-ui-kit";
-
 export default function App() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
     <MDBNavbar expand="lg" className="fixed-top" light bgColor="light">
       <MDBContainer fluid>
-        <MDBNavbarBrand href="#">
+        <MDBNavbarBrand href="/">
           <MDBBtn rounded outline color="success">
             <span className="text-danger">E</span>
             <span>-</span>
@@ -42,12 +41,12 @@ export default function App() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
+              <MDBNavbarLink active aria-current="page" href="/">
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#">All Tutor</MDBNavbarLink>
+              <MDBNavbarLink href="ads">All Tutor</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBDropdown>
@@ -81,7 +80,7 @@ export default function App() {
             <MDBBtn rounded outline>
               Search
             </MDBBtn>
-            <MDBBtn className="mx-1" color="dark">
+            <MDBBtn className="mx-1" color="dark" href="login">
               Login
             </MDBBtn>
           </MDBInputGroup>

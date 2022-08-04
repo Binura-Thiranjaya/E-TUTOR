@@ -1,11 +1,23 @@
-import Home from './page/home/index';
+import Home from './routes/home/index';
+import Login from './routes/login/index';
+import AllAds from './routes/allAds/index';
 import './App.css';
-
+import ReactDOM from "react-dom/client";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+   
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="login" element={<Login />} />
+      <Route path="ads" element={<AllAds />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 

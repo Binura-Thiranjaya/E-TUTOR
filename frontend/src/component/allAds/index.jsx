@@ -11,10 +11,9 @@ import {
   MDBBtn,
   MDBContainer,
 } from 'mdb-react-ui-kit';
+import Loader from '../../features/loader';
 export default function App() {
-
-  //const [isLoading, setIsLoading] = useState(false);
-
+  const [isLoading, setIsLoading] = useState(false);
   return (
     <MDBContainer fluid >
     <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
