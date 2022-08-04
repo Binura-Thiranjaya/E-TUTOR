@@ -9,7 +9,7 @@ import Footer from '../component/footer/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Designing Home Page
-import {MDBTypography} from 'mdb-react-ui-kit';
+import {MDBContainer, MDBTypography} from 'mdb-react-ui-kit';
 class Home extends Component {
   
   render() {
@@ -24,12 +24,15 @@ class Home extends Component {
         </div>
 
         <div className='mt-2'>
-          <figure className='text-center mb-0'>
+          <MDBContainer>
+          <figure className="m-3">
             <MDBTypography blockquote>
               <h1><span>All</span> Ads<span></span></h1>
             </MDBTypography>
           </figure>
         <ViewTopAds />
+        </MDBContainer>
+
         </div>
 
         <div className='mt-4'>
