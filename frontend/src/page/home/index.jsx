@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 //import Component
-import Slider from '../component/slider/index';
-import Navbar from '../component/navbar/index';
-import ViewTopAds from '../component/viewTopAds/index';
-import Footer from '../component/footer/index';
+import Slider from '../../component/slider/index';
+import Navbar from '../../component/navbar/index';
+import ViewTopAds from '../../component/viewTopAds/index';
+import Footer from '../../component/footer/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Designing Home Page
